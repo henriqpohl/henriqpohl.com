@@ -1,0 +1,58 @@
+/*
+Creatil - Design e Development Web
+Version: 1.0
+Description: My personal website
+Author: Henrique R. Pohl
+Author URI: https://www.henriqpohl.com
+
+DO NOT EDIT ABOVE THIS!
+
+❤️
+
+/* GENERAL RULES */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgba(255, 185, 0, 1);
+  --black: rgba(29, 29, 27, 1);
+  --standard-green: rgba(169, 202, 73, 1);
+
+  --green-1: rgba(122, 145, 57, 1);
+  --green-2: rgba(169, 203, 86, 1);
+  --green-3: rgba(162, 183, 100, 1);
+  --green-4: rgba(135, 165, 52, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-size: 400%;
+  animation: animateBG 8s ease infinite;
+
+  @apply bg-gradient-to-r from-[color:var(--green-2)] via-[color:var(--green-3)] to-[color:var(--green-4)];
+}
+
+@keyframes animateBG {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

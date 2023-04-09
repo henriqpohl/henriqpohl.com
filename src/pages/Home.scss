@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+  @apply cursor-pointer;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+ul {
+  @apply flex justify-center;
+}
+
+li a {
+  @apply flex items-center transition filter duration-300 hover:brightness-200 cursor-pointer;
+}
+
+.social-icon {
+  @apply w-7 h-7 mr-2 text-[color:var(--black)];
+}
+
+.personal-information {
+  opacity: 1;
+  @apply transition duration-200;
+}
+
+.less-is-more {
+  @apply transition duration-200;
+}
+
+.personal-information-clicked {
+  opacity: 0.2;
+  @apply blur-sm;
+}
+
+.less-is-more-clicked {
+  opacity: 1;
+  @apply blur-none z-10 transition duration-200 -translate-y-1
+    2xl:scale-105;
+}
+
+// header {
+//   &:hover {
+//     @apply cursor-pointer;
+//   }
+
+//   &:hover ~ .personal-information {
+//     opacity: 0.2;
+//     @apply blur-sm;
+//   }
+//   &:hover ~ [class*="less-is-more"] {
+//     opacity: 1;
+//     @apply blur-none z-10 transition duration-200 -translate-y-1
+//     2xl:scale-105;
+//   }
+// }
+
+.heart {
+  -webkit-animation: animateHeart 2.5s infinite;
+  animation: animateHeart 2.5s infinite;
+}
+
+@keyframes animateHeart {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  5% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  10% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  15% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.click-less-is-more {
+  animation: tilt-shaking 0.4s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
