@@ -19,11 +19,8 @@ export function Home() {
     setIsClicked(!isClicked)
   }
 
-  const personalInformationStatus = isClicked
-    ? "personal-information-clicked"
-    : ""
-
-  const lessIsMoreStatus = isClicked ? "less-is-more-clicked" : ""
+  const personalInformationStatus = "personal-information-clicked"
+  const lessIsMoreStatus = "less-is-more-clicked"
 
   return (
     <main>
@@ -37,12 +34,10 @@ export function Home() {
         </div>
       </header>
 
-      {/* <div
-        className={`personal-information ${personalInformationStatus} max-w-[1120px] mx-auto px-8 pt-8 text-center`}
-      ></div> */}
-
       <div
-        className={`personal-information ${personalInformationStatus} max-w-[1120px] mx-auto px-8 pt-8 text-center`}
+        className={`personal-information ${
+          isClicked && personalInformationStatus
+        } max-w-[1120px] mx-auto px-8 pt-8 text-center`}
       >
         <section>
           <h1 className="text-[color:var(--black)] mt-2 text-4xl font-normal">
@@ -110,7 +105,9 @@ export function Home() {
 
       <div
         onClick={handleClick}
-        className={`w-full h-full less-is-more ${lessIsMoreStatus} p-8 absolute -z-10 top-0  m-auto left-0 right-0 opacity-30 text-center blur-sm text-white text-4xl leading-relaxed 2xl:text-5xl 2xl:leading-relaxed`}
+        className={`w-full h-full less-is-more ${
+          isClicked && lessIsMoreStatus
+        } p-8 absolute -z-10 top-0  m-auto left-0 right-0 opacity-30 text-center blur-sm text-white text-4xl leading-relaxed 2xl:text-5xl 2xl:leading-relaxed`}
       >
         <div className="max-w-[1120px] relative mt-14">
           <p className="font-semibold">Less is More!</p>
