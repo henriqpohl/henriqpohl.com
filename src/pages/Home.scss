@@ -42,8 +42,7 @@ li a {
 
 .less-is-more-clicked {
   opacity: 1;
-  @apply blur-none z-10 transition duration-200 -translate-y-1
-    2xl:scale-105;
+  @apply blur-none z-10 transition duration-200 -translate-y-1;
 }
 
 // header {

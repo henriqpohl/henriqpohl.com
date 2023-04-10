@@ -105,11 +105,11 @@ export function Home() {
 
       <div
         onClick={handleClick}
-        className={`w-full h-full less-is-more ${
+        className={`less-is-more w-full h-full ${
           isClicked && lessIsMoreStatus
-        } p-8 absolute -z-10 top-0  m-auto left-0 right-0 opacity-30 text-center blur-sm text-white text-4xl leading-relaxed 2xl:text-5xl 2xl:leading-relaxed`}
+        } absolute -z-10 top-0 opacity-30 blur-sm`}
       >
-        <div className="max-w-[1120px] relative mt-14">
+        <div className="max-w-[1120px] mx-auto pt-16 p-8 text-center text-4xl leading-relaxed text-white 2xl:text-5xl 2xl:leading-relaxed">
           <p className="font-semibold">Less is More!</p>
           <p>
             So, believing that the Web and Design unites different universes and
