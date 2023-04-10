@@ -6,13 +6,14 @@ import { VscHeart } from "react-icons/vsc"
 import { MdAlternateEmail } from "react-icons/md"
 import { RiBehanceFill, RiLinkedinFill } from "react-icons/ri"
 
-import { HiOutlineCursorClick } from "react-icons/hi"
 import { useState } from "react"
 
 import "./Home.scss"
 import { Notification } from "../components/notification/Notification"
+import { LessIsMore } from "../components/less-is-more/Less-is-more"
 
 export function Home() {
+  
   const [isClicked, setIsClicked] = useState(false)
 
   const handleClick = () => {
@@ -22,6 +23,7 @@ export function Home() {
   const personalInformationStatus = isClicked
     ? "personal-information-clicked"
     : ""
+
   const lessIsMoreStatus = isClicked ? "less-is-more-clicked" : ""
 
   return (
@@ -32,12 +34,13 @@ export function Home() {
 
           <Notification />
 
-          <HiOutlineCursorClick
-            className="click-less-is-more cursor-pointer w-8 h-8 mr-2 text-[color:var(--black)]"
-            onClick={handleClick}
-          />
+          <LessIsMore click={handleClick} />
         </div>
       </header>
+
+      {/* <div
+        className={`personal-information ${personalInformationStatus} max-w-[1120px] mx-auto px-8 pt-8 text-center`}
+      ></div> */}
 
       <div
         className={`personal-information ${personalInformationStatus} max-w-[1120px] mx-auto px-8 pt-8 text-center`}

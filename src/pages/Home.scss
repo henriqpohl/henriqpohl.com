@@ -24,9 +24,11 @@ li a {
   @apply w-7 h-7 mr-2 text-[color:var(--black)];
 }
 
-.personal-information {
-  opacity: 1;
-  @apply transition duration-200;
+@layer components {
+  .personal-information {
+    opacity: 1;
+    @apply transition duration-200;
+  }
 }
 
 .less-is-more {
