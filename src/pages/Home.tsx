@@ -13,7 +13,6 @@ import { Notification } from "../components/notification/Notification"
 import { LessIsMore } from "../components/less-is-more/Less-is-more"
 
 export function Home() {
-  
   const [isClicked, setIsClicked] = useState(false)
 
   const handleClick = () => {
@@ -110,16 +109,20 @@ export function Home() {
       </div>
 
       <div
-        className={`less-is-more ${lessIsMoreStatus} max-w-[1120px] p-8 absolute -z-10 top-4 mt-14 m-auto left-0 right-0 opacity-30 text-center blur-sm text-white min-h-fit text-4xl leading-relaxed 2xl:text-5xl 2xl:leading-relaxed`}
+        onClick={handleClick}
+        className={`w-full h-full less-is-more ${lessIsMoreStatus} p-8 absolute -z-10 top-0  m-auto left-0 right-0 opacity-30 text-center blur-sm text-white text-4xl leading-relaxed 2xl:text-5xl 2xl:leading-relaxed`}
       >
-        <p className="font-semibold">Less is More!</p>
-        <p>
-          So, believing that the Web and Design unites different universes and
-          brings us a fantastic way of communication, through drawings, forms
-          and objects, it provides us a massive immersion to expose our goals,
-          making our ideas innovative. It brings people together, teaching them
-          to think like you, <span className="font-semibold">right? :)</span>
-        </p>
+        <div className="max-w-[1120px] relative mt-14">
+          <p className="font-semibold">Less is More!</p>
+          <p>
+            So, believing that the Web and Design unites different universes and
+            brings us a fantastic way of communication, through drawings, forms
+            and objects, it provides us a massive immersion to expose our goals,
+            making our ideas innovative. It brings people together, teaching
+            them to think like you,{" "}
+            <span className="font-semibold">right? :)</span>
+          </p>
+        </div>
       </div>
     </main>
   )

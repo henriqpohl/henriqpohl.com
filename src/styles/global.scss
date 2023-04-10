@@ -35,8 +35,7 @@ html {
 }
 
 a {
-  text-decoration: none;
-  transition: 0.3s;
+  @apply duration-300 hover:brightness-200 no-underline cursor-pointer;
 }
 
 body {

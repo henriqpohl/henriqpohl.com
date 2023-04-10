@@ -17,7 +17,7 @@ ul {
 }
 
 li a {
-  @apply flex items-center transition filter duration-300 hover:brightness-200 cursor-pointer;
+  @apply flex items-center;
 }
 
 .social-icon {
@@ -91,27 +91,5 @@ li a {
   100% {
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
-  }
-}
-
-.click-less-is-more {
-  animation: tilt-shaking 0.4s infinite;
-}
-
-@keyframes tilt-shaking {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0eg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
