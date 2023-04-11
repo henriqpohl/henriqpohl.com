@@ -45,22 +45,6 @@ li a {
   @apply blur-none z-10 transition duration-200 -translate-y-1;
 }
 
-// header {
-//   &:hover {
-//     @apply cursor-pointer;
-//   }
-
-//   &:hover ~ .personal-information {
-//     opacity: 0.2;
-//     @apply blur-sm;
-//   }
-//   &:hover ~ [class*="less-is-more"] {
-//     opacity: 1;
-//     @apply blur-none z-10 transition duration-200 -translate-y-1
-//     2xl:scale-105;
-//   }
-// }
-
 .heart {
   -webkit-animation: animateHeart 2.5s infinite;
   animation: animateHeart 2.5s infinite;

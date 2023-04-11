@@ -40,10 +40,10 @@ export function Home() {
         } max-w-[1120px] mx-auto px-8 pt-8 text-center`}
       >
         <section>
-          <h1 className="text-[color:var(--black)] mt-2 text-4xl font-normal">
+          <h1 className="text-[color:var(--black)] mt-2 text-4xl font-normal leading-normal">
             Greetings! <span className="font-semibold">I'm Henrique,</span>
           </h1>
-          <h2 className="text-[color:var(--black)] text-5xl font-semibold leading-relaxed">
+          <h2 className="text-[color:var(--black)] text-5xl mt-8 sm:mt-4 font-semibold leading-normal">
             a Web Developer & Designer
           </h2>
           <h3 className="text-[color:var(--black)] mt-16 leading-relaxed text-center text-3xl font-normal">
@@ -105,11 +105,11 @@ export function Home() {
 
       <div
         onClick={handleClick}
-        className={`less-is-more w-full h-full ${
+        className={`w-full h-full less-is-more ${
           isClicked && lessIsMoreStatus
-        } absolute -z-10 top-0 opacity-30 blur-sm`}
+        } p-8 absolute -z-10 top-0 left-0 right-0 opacity-30`}
       >
-        <div className="max-w-[1120px] mx-auto pt-16 p-8 text-center text-4xl leading-relaxed text-white 2xl:text-5xl 2xl:leading-relaxed">
+        <div className="max-w-[1120px] text-center blur-sm mt-12 pt-12 pb-12 m-auto relative text-white text-4xl sm:text-4xl sm:leading-loose leading-normal">
           <p className="font-semibold">Less is More!</p>
           <p>
             So, believing that the Web and Design unites different universes and
