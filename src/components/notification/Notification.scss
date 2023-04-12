@@ -1,7 +1,7 @@
 .notification {
   background-color: var(--black);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(-30px);
+  transform: translateY(-90px);
   animation: fade 4s linear forwards;
 }
 
@@ -34,7 +34,7 @@
 
   100% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(-90px);
   }
 }
 
