@@ -2,52 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo {
-  @apply cursor-pointer;
-
-  transition: transform 0.5s ease-in-out;
-}
-
-.logo:hover {
-  transform: rotate(360deg);
-}
-
-ul {
-  @apply flex justify-center;
-}
-
-li a {
-  @apply flex items-center;
-}
-
-.social-icon {
-  @apply w-7 h-7 mr-2 text-[color:var(--black)];
-}
-
 @layer components {
   .personal-information {
-    opacity: 1;
-    @apply transition duration-200;
+    @apply opacity-100 transition duration-200;
+  }
+
+  .heart {
+    -webkit-animation: animateHeart 2.5s infinite;
+    animation: animateHeart 2.5s infinite;
   }
 }
 
-.less-is-more {
-  @apply transition duration-200;
-}
+@layer utilities {
+  .personal-information-clicked {
+    @apply opacity-20 blur-sm;
+  }
 
-.personal-information-clicked {
-  opacity: 0.2;
-  @apply blur-sm;
-}
-
-.less-is-more-clicked {
-  opacity: 1;
-  @apply blur-none z-10 transition duration-200 -translate-y-1;
-}
-
-.heart {
-  -webkit-animation: animateHeart 2.5s infinite;
-  animation: animateHeart 2.5s infinite;
+  .less-is-more-clicked {
+    @apply opacity-100 blur-none z-10 transition duration-200 -translate-y-1;
+  }
 }
 
 @keyframes animateHeart {

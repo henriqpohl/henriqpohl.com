@@ -26,7 +26,12 @@ export function Home() {
     <main>
       <header className="sticky z-50 w-full p-8">
         <div className="flex items-center justify-between">
-          <img src={logoImg} width={50} alt="" className="logo"></img>
+          <img
+            src={logoImg}
+            width={50}
+            alt=""
+            className="transition duration-500 ease-in-out cursor-pointer hover:rotate-360"
+          ></img>
 
           <Notification />
 
@@ -55,10 +60,14 @@ export function Home() {
         </section>
 
         <section className="mt-16">
-          <ul className="flex-row flex-wrap gap-10 text-lg cursor-pointer text-baseflex">
+          <ul className="flex flex-row flex-wrap justify-center gap-10 text-lg cursor-pointer">
             <li>
-              <a href="mailto:henriqpohl@gmail.com" target="_blank">
-                <MdAlternateEmail className="social-icon" />
+              <a
+                href="mailto:henriqpohl@gmail.com"
+                target="_blank"
+                className="flex items-center"
+              >
+                <MdAlternateEmail className="w-7 h-7 mr-2 text-[color:var(--black)]" />
                 E-mail
               </a>
             </li>
@@ -68,8 +77,9 @@ export function Home() {
                 href="https://wa.me/353833998859?text=Ola%20venho%20atraves%20do%20seu%20cartao%20digital!"
                 target="_blank"
                 rel="noopener"
+                className="flex items-center"
               >
-                <FaWhatsapp className="social-icon" />
+                <FaWhatsapp className="w-7 h-7 mr-2 text-[color:var(--black)]" />
                 WhatsApp
               </a>
             </li>
@@ -79,8 +89,9 @@ export function Home() {
                 href="https://www.linkedin.com/in/henriqpohl/"
                 target="_blank"
                 rel="noopener"
+                className="flex items-center"
               >
-                <RiLinkedinFill className="social-icon" />
+                <RiLinkedinFill className="w-7 h-7 mr-2 text-[color:var(--black)]" />
                 <span>LinkedIn</span>
               </a>
             </li>
@@ -90,8 +101,9 @@ export function Home() {
                 href="https://www.behance.net/henriqpohl"
                 target="_blank"
                 rel="noopener"
+                className="flex items-center"
               >
-                <RiBehanceFill className="social-icon" />
+                <RiBehanceFill className="w-7 h-7 mr-2 text-[color:var(--black)]" />
                 Behance
               </a>
             </li>
@@ -105,7 +117,7 @@ export function Home() {
 
       <div
         onClick={handleClick}
-        className={`w-full h-full less-is-more ${
+        className={`w-full h-full less-is-more  ${
           isClicked && lessIsMoreStatus
         } p-8 absolute -z-10 top-0 left-0 right-0 opacity-30 blur-sm`}
       >

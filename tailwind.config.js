@@ -8,6 +8,9 @@ module.exports = {
         negative: -1,
         0: 0,
       },
+      rotate: {
+        360: "360deg",
+      },
     },
   },
   plugins: [],
