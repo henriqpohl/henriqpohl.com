@@ -7,6 +7,10 @@
     @apply opacity-100 transition duration-200;
   }
 
+  .hand-tilt-shaking {
+    animation: tilt-shaking 0.4s infinite;
+  }
+
   .heart {
     -webkit-animation: animateHeart 2.5s infinite;
     animation: animateHeart 2.5s infinite;

@@ -46,10 +46,13 @@ export function Home() {
       >
         <section>
           <h1 className="text-[color:var(--black)] mt-2 text-4xl font-normal leading-normal">
-            Greetings! <span className="font-semibold">I'm Henrique,</span>
+            <span className="flex justify-center gap-2 text-3xl">
+              Hi there!<div className="hand-tilt-shaking">👋</div>
+            </span>
+            <span className="font-semibold">I'm Henrique,</span>
           </h1>
           <h2 className="text-[color:var(--black)] text-5xl mt-8 sm:mt-4 font-semibold leading-normal">
-            a Web Developer & Designer
+            a Web Developer!
           </h2>
           <h3 className="text-[color:var(--black)] mt-16 leading-relaxed text-center text-3xl font-normal">
             I believe that the <span className="font-semibold">Web</span> and{" "}
