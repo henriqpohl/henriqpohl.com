@@ -52,7 +52,7 @@ export function Home() {
             <span className="font-semibold">I'm Henrique,</span>
           </h1>
           <h2 className="text-[color:var(--black)] text-5xl mt-8 sm:mt-4 font-semibold leading-normal">
-            a Web Developer!
+            a Front End Engineer!
           </h2>
           <h3 className="text-[color:var(--black)] mt-16 leading-relaxed text-center text-3xl font-normal">
             I believe that the <span className="font-semibold">Web</span> and{" "}
