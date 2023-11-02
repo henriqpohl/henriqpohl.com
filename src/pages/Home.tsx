@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa"
 
 import { VscHeart } from "react-icons/vsc"
 import { MdAlternateEmail } from "react-icons/md"
-import { RiBehanceFill, RiLinkedinFill } from "react-icons/ri"
+import { RiGithubFill, RiLinkedinFill } from "react-icons/ri"
 
 import { useState } from "react"
 
@@ -101,13 +101,13 @@ export function Home() {
 
             <li>
               <a
-                href="https://www.behance.net/henriqpohl"
+                href="https://github.com/henriqpohl"
                 target="_blank"
                 rel="noopener"
                 className="flex items-center"
               >
-                <RiBehanceFill className="w-7 h-7 mr-2 text-[color:var(--black)]" />
-                Behance
+                <RiGithubFill className="w-7 h-7 mr-2 text-[color:var(--black)]" />
+                GitHub
               </a>
             </li>
           </ul>
