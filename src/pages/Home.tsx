@@ -77,7 +77,7 @@ export function Home() {
 
             <li>
               <a
-                href="https://wa.me/353833998859?text=Ola%20venho%20atraves%20do%20seu%20cartao%20digital!"
+                href="https://wa.me/353833998859?text=Hi,%20I%20came%20from%20your%20website!"
                 target="_blank"
                 rel="noopener"
                 className="flex items-center"
